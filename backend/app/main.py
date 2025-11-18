@@ -16,7 +16,7 @@ app = FastAPI(title="Chat Proxy API", docs_url="/docs")
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173", "http://localhost:3000", "tauri://localhost"],
+    allow_origins=["http://localhost:5173", "http://localhost:8000", "tauri://localhost", "http://localhost:4173" ],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
